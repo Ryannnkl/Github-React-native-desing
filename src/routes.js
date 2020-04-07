@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -15,15 +16,19 @@ export function DrawerNavigator() {
   return (
     <Drawer.Navigator
       drawerType="slide"
-      screenOptions={{
-        headerShown: true,
+      drawerContentOptions={{
+        activeTintColor: "#ffe88d",
+        inactiveTintColor: "#fffd",
+        itemStyle: { marginVertical: 15 },
         style: {
-          backgroundColor: "#333333",
+          backgroundColor: "#333",
+          borderRightWidth: 2,
+          borderRightColor: "#444",
         },
       }}
       initialRouteName="home"
     >
-      <Drawer.Screen name="home" component={Home} />
+      <Drawer.Screen name="Inicio" component={Home} />
       <Drawer.Screen name="repositores" component={Repositores} />
       <Drawer.Screen name="login" component={Login} />
     </Drawer.Navigator>

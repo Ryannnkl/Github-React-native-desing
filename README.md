@@ -3,7 +3,9 @@
 ### um redesing do app mobile do github funcional
 
 > api do github
+>
 > redux
+>
 > styled-component
 
 ## author

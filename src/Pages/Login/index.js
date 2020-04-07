@@ -41,6 +41,7 @@ export default function Login() {
           placeholder="github_username"
           onChangeText={setUsername}
           value={username}
+          autoCapitalize="none"
         />
         <Button onPress={() => handleLogin()}>
           <TextButton>entrar</TextButton>
