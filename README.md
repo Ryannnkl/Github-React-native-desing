@@ -14,6 +14,14 @@
 >
 > **styled-component**
 >
+> > apesar de muito usual, se for muito usada "muitas requests em um unico dia" ela bloqueia o trafego ate o proximo dia
+>
+> **redux**
+>
+> > armazena o resultado de uma request da api no estado global do redux
+>
+> **styled-component**
+>
 > > estiliação dos componentes para maior organização para alguma futura atualização
 
 - **login**
