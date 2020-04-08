@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "github",
+    "name": "Github View",
     "slug": "github",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",

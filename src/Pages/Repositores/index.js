@@ -6,5 +6,9 @@ import { Container } from "./styles";
 import ListRepos from "../../Components/ListRepos";
 
 export default function Repositores() {
-  return <ListRepos />;
+  return (
+    <Container>
+      <ListRepos />
+    </Container>
+  );
 }

@@ -6,7 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "./Pages/Home";
 import Repositores from "./Pages/Repositores";
-
+import Detail from "./Components/Detail";
 import Login from "./Pages/Login";
 
 const Drawer = createDrawerNavigator();
@@ -40,6 +40,7 @@ export default function StackNavigation() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="login" component={Login} />
+        <Stack.Screen name="detail" component={Detail} />
         <Stack.Screen name="drawer" component={DrawerNavigator} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -8,7 +8,6 @@ import {
   Content,
   Detail,
   Image,
-  Label,
   Input,
   Button,
   TextButton,
@@ -23,8 +22,11 @@ export default function Login() {
   async function handleLogin() {
     const response = await fetch(`https://api.github.com/users/${username}`);
     const user = await response.json();
-    if (user.message) {
-      Alert.alert("Erro", "usuario não encontrado");
+    if (
+      user.documentation_url ===
+      "https://developer.github.com/v3/#rate-limiting"
+    ) {
+      Alert.alert("Erro", "Maximo de requisições execidas por hoje");
       return;
     }
     dispatch({ type: "SET_USER", user: user });
