@@ -1,18 +1,12 @@
 import styled from "styled-components/native";
 
-import img from "../../../assets/background.png";
 import icon from "../../../assets/icon_name.png";
 
-export const Container = styled.ImageBackground.attrs({
-  source: img,
-  imageStyle: {
-    resizeMode: "cover",
-  },
-})`
+export const Container = styled.View`
   flex: 1;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #24292e;
 `;
 
 export const Content = styled.View`
@@ -24,13 +18,6 @@ export const Content = styled.View`
   flex-direction: column;
   background-color: #fff;
   border-radius: 20px;
-`;
-
-export const Detail = styled.View`
-  height: 100%;
-  width: 100%;
-  background: #24292e;
-  position: absolute;
 `;
 
 export const Image = styled.ImageBackground.attrs({

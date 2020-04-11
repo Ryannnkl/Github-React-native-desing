@@ -64,11 +64,24 @@ export default function Home({ navigation }) {
             <ItemUserText>{user.location}</ItemUserText>
           </ItemUserContent>
         )}
+        {user.blog && (
+          <ItemUserContent>
+            <FontAwesome5 name="blog" size={20} color="#333" />
+            <ItemUserText>{user.blog}</ItemUserText>
+          </ItemUserContent>
+        )}
+        {user.company && (
+          <ItemUserContent>
+            <FontAwesome5 name="building" size={20} color="#333" />
+            <ItemUserText>{user.company}</ItemUserText>
+          </ItemUserContent>
+        )}
+        <ItemUserContent>
+          <FontAwesome5 name="home" size={20} color="#333" />
+          <ItemUserText>entrou em </ItemUserText>
+          <ItemUserText>{user.created_at}</ItemUserText>
+        </ItemUserContent>
       </ContentContainer>
-      <Button
-        title="teste"
-        onPress={() => Alert.alert("teste", user.location)}
-      />
     </Container>
   );
 }

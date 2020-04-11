@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import { Alert } from "react-native";
-import { useDispatch, useSelector } from "react-redux";
+import { Alert, Switch } from "react-native";
+import { useDispatch } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
-import {
-  Container,
-  Content,
-  Detail,
-  Image,
-  Input,
-  Button,
-  TextButton,
-} from "./styles";
+import { Container, Content, Image, Input, Button, TextButton } from "./styles";
 
 export default function Login() {
   const [username, setUsername] = useState("");
+
   const dispatch = useDispatch();
 
   const navigation = useNavigation();
@@ -36,7 +29,6 @@ export default function Login() {
 
   return (
     <Container>
-      <Detail />
       <Content>
         <Image />
         <Input
@@ -45,6 +37,7 @@ export default function Login() {
           value={username}
           autoCapitalize="none"
         />
+
         <Button onPress={() => handleLogin()}>
           <TextButton>entrar</TextButton>
         </Button>

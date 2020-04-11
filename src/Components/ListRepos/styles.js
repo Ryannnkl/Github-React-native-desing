@@ -13,8 +13,6 @@ export const Header = styled.View`
   align-items: center;
   justify-content: center;
   background-color: #24292e;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
 `;
 
 export const Loading = styled.ActivityIndicator.attrs({

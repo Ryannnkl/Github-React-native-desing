@@ -1,3 +1,9 @@
+<p align="center">
+   <img src="https://i.ibb.co/bmTBnj3/Screenshot-20200411-181950-Expo.jpg" width="200" height="380">
+   <img src="https://i.ibb.co/XSKDsHf/Screenshot-20200411-181946-Expo.jpg" width="200" height="380">
+   <img src="https://i.ibb.co/yQdp1ZF/Screenshot-20200411-181937-Expo.jpg" width="200" height="380">
+</p>
+
 # Github mobile
 
 ## um redesing do app mobile do github funcional
@@ -11,10 +17,6 @@
 > **redux**
 >
 > > armazena o resultado de uma request da api no estado global do redux
->
-> **styled-component**
->
-> > apesar de muito usual, se for muito usada "muitas requests em um unico dia" ela bloqueia o trafego ate o proximo dia
 >
 > **redux**
 >
