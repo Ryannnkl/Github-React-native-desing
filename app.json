@@ -2,8 +2,8 @@
   "expo": {
     "name": "Github View",
     "slug": "github",
-    "platforms": ["ios", "android", "web"],
-    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,7 +20,12 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.rendapp.github",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.rendapp.github",
+      "versionCode": 1
     }
   }
 }

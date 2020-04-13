@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
-
+import { FontAwesome5 } from "@expo/vector-icons";
 import {
   Container,
+  Menu,
   Header,
   HeaderText,
   Repository,
@@ -28,7 +29,6 @@ export default function ListRepos() {
     if (total && pageNumber >= total) {
       return;
     }
-    console.log(repos_url);
 
     setLoading(true);
 
@@ -67,6 +67,9 @@ export default function ListRepos() {
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <Header>
+            <Menu onPress={() => navigation.openDrawer()}>
+              <FontAwesome5 name="bars" size={30} color="#555" />
+            </Menu>
             <HeaderText>Repositórios</HeaderText>
           </Header>
         }

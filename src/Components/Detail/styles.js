@@ -47,7 +47,7 @@ export const ContentItems = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
 })`
   width: 100%;
-  height: 100px;
+  height: auto;
 `;
 
 export const ContentItem = styled.View`
@@ -59,6 +59,7 @@ export const ContentItem = styled.View`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  background-color: #ffffff;
   border: 1px solid #00000025;
 `;
 
@@ -74,10 +75,23 @@ export const ValueItem = styled.Text`
 `;
 
 export const Content = styled.View`
-  width: 100%;
-  height: auto;
+  padding: 20px 0;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
+`;
+
+export const Image = styled.View`
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #333;
+  margin-bottom: 50px;
+`;
+
+export const Photo = styled.Image`
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
 `;
 
 export const LangContent = styled.View`

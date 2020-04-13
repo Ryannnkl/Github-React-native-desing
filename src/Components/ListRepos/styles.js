@@ -12,6 +12,7 @@ export const Header = styled.View`
   height: 200px;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   background-color: #24292e;
 `;
 
@@ -20,6 +21,16 @@ export const Loading = styled.ActivityIndicator.attrs({
   color: "#333",
 })`
   margin: 30px 0;
+`;
+
+export const Menu = styled.TouchableOpacity`
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  border-radius: 50px;
 `;
 
 export const HeaderText = styled.Text`

@@ -7,6 +7,8 @@ import { useRoute } from "@react-navigation/native";
 import {
   Container,
   Header,
+  Image,
+  Photo,
   Name,
   Link,
   FullName,
@@ -98,14 +100,18 @@ export default function Detail() {
           <ValueItem>{item.open_issues}</ValueItem>
         </ContentItem>
       </ContentItems>
+      <Image>
+        <LinkText>By</LinkText>
+        <Photo source={{ uri: item.owner.avatar_url }} />
+      </Image>
+      <LinkContent>
+        <LinkText>SITE</LinkText>
+        <Link onPress={() => Linking.openURL(item.html_url)}>
+          {item.html_url}
+        </Link>
+      </LinkContent>
 
       <Content>
-        <LinkContent>
-          <LinkText>SITE</LinkText>
-          <Link onPress={() => Linking.openURL(item.html_url)}>
-            {item.html_url}
-          </Link>
-        </LinkContent>
         {item.language && (
           <LangContent cor={color}>
             <Language>{item.language}</Language>
