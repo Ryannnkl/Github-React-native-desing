@@ -8,6 +8,8 @@
 
 # Github mobile
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6bfba7f3b8cf40f6b94949c91741b3b6)](https://app.codacy.com/gh/Ryannnkl/Github-React-native-desing?utm_source=github.com&utm_medium=referral&utm_content=Ryannnkl/Github-React-native-desing&utm_campaign=Badge_Grade)
+
 ## um redesing do app mobile do github funcional
 
 - ### utiliza as segintes bibliotecas e API
