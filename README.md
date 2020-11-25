@@ -1,4 +1,7 @@
 <p align="center">
+    <a href="https://www.codacy.com/gh/Ryannnkl/Github-React-native-desing/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ryannnkl/Github-React-native-desing&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/99acc7358ff94bc68c84f5b0a4a6c3f3"/></a>
+</p>
+<p align="center">
    <img src="https://i.ibb.co/bmTBnj3/Screenshot-20200411-181950-Expo.jpg" width="200" height="380">
    <img src="https://i.ibb.co/yQdp1ZF/Screenshot-20200411-181937-Expo.jpg" width="200" height="380">
    <img src="https://i.ibb.co/cL1Yk92/Screenshot-20200413-145729-Expo.jpg" width="200" height="380">
@@ -43,7 +46,7 @@
 - **Detalhes**
   - Tela responsavel por mostar os detalhes de um repositorio desejado pela rota `repositorios`
 
-## author
+## autor
 
 | [<img src="https://avatars1.githubusercontent.com/u/48577990?v=4" width=115><br><sub>@Ryannnkl</sub>](https://github.com/Ryannnkl) |
 | :--------------------------------------------------------------------------------------------------------------------------------: |
